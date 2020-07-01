@@ -7,10 +7,12 @@
  * documentation: docs.jspsych.org
  *
  */
+var global_dict =new Array();
 
 jsPsych.plugins['survey-likert'] = (function() {
 
   var plugin = {};
+  var global_dict_var =0;
 
   plugin.info = {
     name: 'survey-likert',
@@ -99,6 +101,23 @@ jsPsych.plugins['survey-likert'] = (function() {
     if(trial.preamble !== null){
       html += '<div id="jspsych-survey-likert-preamble" class="jspsych-survey-likert-preamble">'+trial.preamble+'</div>';
     }
+    for(var i =0; i<3; i++){
+
+      console.log(trial.questions[i].name);
+
+    }
+
+    //extracting order 
+    var img_tmp = trial.questions[0].name;
+    img_tmp = img_tmp.substr(4);
+
+    if(window.screen.width>=550){
+      html+= '<img src = "./img/happy_test_data/data'+img_tmp+'.png" style = "position: relative; padding-top : 10%;"></img>';
+    }
+    else{
+      html+= '<img src = "./img/happy_test_data/data'+img_tmp+'.png" ></img>';
+    }
+
     html += '<form id="jspsych-survey-likert-form">';
 
     // add likert scale questions ///
@@ -115,7 +134,15 @@ jsPsych.plugins['survey-likert'] = (function() {
     for (var i = 0; i < trial.questions.length; i++) {
       var question = trial.questions[question_order[i]];
       // add question
-      html += '<label class="jspsych-survey-likert-statement">' + question.prompt + '</label>';
+      console.log(trial.questions.length);
+      var temp = i+1;
+      html += '<label class="jspsych-survey-likert-statement">' + 
+      '<img src="img/SAM/SAM'+temp+'_1.png" style = "width : 15%;"></img>' + 
+      '<img src="img/SAM/SAM'+temp+'_2.png" style = "width : 15%;"></img>' + 
+      '<img src="img/SAM/SAM'+temp+'_3.png" style = "width : 15%;"></img>' + 
+      '<img src="img/SAM/SAM'+temp+'_4.png" style = "width : 15%;"></img>' + 
+      '<img src="img/SAM/SAM'+temp+'_5.png" style = "width : 15%;"></img>' + 
+      '</label>';
       // add options
       var width = 100 / question.labels.length;
       var options_string = '<ul class="jspsych-survey-likert-opts" data-name="'+question.name+'" data-radio-group="Q' + question_order[i] + '">';
@@ -149,6 +176,11 @@ jsPsych.plugins['survey-likert'] = (function() {
       for(var index = 0; index < matches.length; index++){
         var id = matches[index].dataset['radioGroup'];
         var el = display_element.querySelector('input[name="' + id + '"]:checked');
+        
+        //check which radio buttons are pressed
+        // console.log(el.value);
+
+
         if (el === null) {
           var response = "";
         } else {
@@ -160,11 +192,18 @@ jsPsych.plugins['survey-likert'] = (function() {
         } else {
           var name = id;
         }
-        obje[name] = response;
-        Object.assign(question_data, obje);
-      }
+        console.log("response : "+ response);
+        console.log("name : "+ name);
+        console.log("obje : "+ obje.length);
 
-      // save data
+        obje[index] = response;
+        global_dict[global_dict_var++] = response;
+        Object.assign(question_data, obje);
+        
+      }
+      for(var i =0; i<global_dict.length; i++){
+        console.log(global_dict[i]);
+      }
       var trial_data = {
         "rt": response_time,
         "responses": JSON.stringify(question_data),

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>ID</title>
+    <title>제대로 좀 하자</title>
     <script src="jspsych.js"></script>
     <script src="test.js"></script>
     <script src="plugins/jspsych-html-keyboard-response.js"></script>
@@ -15,11 +15,11 @@
   <script>
     var timeline = [];
     timeline.push(likert_page);
-//     timeline.push(likert_page2);
+    timeline.push(likert_page2);
     
-//     timeline.push(likert_page3);
-//     timeline.push(likert_page4);
-    timeline.push(last_page);
+        timeline.push(likert_page3);
+        timeline.push(likert_page4);
+         timeline.push(last_page);   
       //   timeline.push(trial_data);
          /* start the experiment */
         function saveData(name, data){
