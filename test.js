@@ -41,6 +41,8 @@ var welcome1 = {
     " ", 
     " ", 
     " ",
+    " ",
+    " "
 
   ];
   
@@ -80,9 +82,154 @@ var welcome1 = {
       {prompt: "I like meat.", name: 'data4', labels: scale_1}
     ],
     // randomize_question_order: true //질문 순서 랜덤
+    
+  };
+  var likert_page5 = {
+    type: 'survey-likert',
+    questions: [
+      {prompt: "I like vegetables.", name: 'data5', labels: scale_1},
+      {prompt: "I like fruit.", name: 'data5', labels: scale_1},
+      {prompt: "I like meat.", name: 'data5', labels: scale_1}
+    ]
   };
 
+  var likert_page6 = {
+    type: 'survey-likert',
+    questions: [
+      {prompt: "I like vegetables.", name: 'data6', labels: scale_1},
+      {prompt: "I like fruit.", name: 'data6', labels: scale_1},
+      {prompt: "I like meat.", name: 'data6', labels: scale_1}
+    ]
+  };
 
+  var likert_page5 = {
+    type: 'survey-likert',
+    questions: [
+      {prompt: "I like vegetables.", name: 'data5', labels: scale_1},
+      {prompt: "I like fruit.", name: 'data5', labels: scale_1},
+      {prompt: "I like meat.", name: 'data5', labels: scale_1}
+    ]
+  };
+
+  var likert_page7 = {
+    type: 'survey-likert',
+    questions: [
+      {prompt: "I like vegetables.", name: 'data7', labels: scale_1},
+      {prompt: "I like fruit.", name: 'data7', labels: scale_1},
+      {prompt: "I like meat.", name: 'data7', labels: scale_1}
+    ]
+  };
+
+  var likert_page8 = {
+    type: 'survey-likert',
+    questions: [
+      {prompt: "I like vegetables.", name: 'data8', labels: scale_1},
+      {prompt: "I like fruit.", name: 'data8', labels: scale_1},
+      {prompt: "I like meat.", name: 'data8', labels: scale_1}
+    ]
+  };
+
+  var likert_page9 = {
+    type: 'survey-likert',
+    questions: [
+      {prompt: "I like vegetables.", name: 'data9', labels: scale_1},
+      {prompt: "I like fruit.", name: 'data9', labels: scale_1},
+      {prompt: "I like meat.", name: 'data9', labels: scale_1}
+    ]
+  };
+
+  var likert_page10 = {
+    type: 'survey-likert',
+    questions: [
+      {prompt: "I like vegetables.", name: 'data10', labels: scale_1},
+      {prompt: "I like fruit.", name: 'data10', labels: scale_1},
+      {prompt: "I like meat.", name: 'data10', labels: scale_1}
+    ]
+  };
+// 원본 사진 샘플
+
+var likert_page_origin_1 = {
+    type: 'survey-likert',
+    questions: [
+      {prompt: "I like vegetables.", name: 'origin1', labels: scale_1},
+      {prompt: "I like fruit.", name: 'origin1', labels: scale_1},
+      {prompt: "I like meat.", name: 'origin1', labels: scale_1}
+    ]
+  };
+  
+var likert_page_origin_2 = {
+    type: 'survey-likert',
+    questions: [
+      {prompt: "I like vegetables.", name: 'origin2', labels: scale_1},
+      {prompt: "I like fruit.", name: 'origin2', labels: scale_1},
+      {prompt: "I like meat.", name: 'origin2', labels: scale_1}
+    ]
+  };
+  
+var likert_page_origin_3 = {
+    type: 'survey-likert',
+    questions: [
+      {prompt: "I like vegetables.", name: 'origin3', labels: scale_1},
+      {prompt: "I like fruit.", name: 'origin3', labels: scale_1},
+      {prompt: "I like meat.", name: 'origin3', labels: scale_1}
+    ]
+  };
+  var likert_page_origin_4 = {
+    type: 'survey-likert',
+    questions: [
+      {prompt: "I like vegetables.", name: 'origin4', labels: scale_1},
+      {prompt: "I like fruit.", name: 'origin4', labels: scale_1},
+      {prompt: "I like meat.", name: 'origin4', labels: scale_1}
+    ]
+  };
+  var likert_page_origin_5 = {
+    type: 'survey-likert',
+    questions: [
+      {prompt: "I like vegetables.", name: 'origin5', labels: scale_1},
+      {prompt: "I like fruit.", name: 'origin5', labels: scale_1},
+      {prompt: "I like meat.", name: 'origin5', labels: scale_1}
+    ]
+  };
+  var likert_page_origin_6 = {
+    type: 'survey-likert',
+    questions: [
+      {prompt: "I like vegetables.", name: 'origin6', labels: scale_1},
+      {prompt: "I like fruit.", name: 'origin6', labels: scale_1},
+      {prompt: "I like meat.", name: 'origin6', labels: scale_1}
+    ]
+  };
+  var likert_page_origin_7 = {
+    type: 'survey-likert',
+    questions: [
+      {prompt: "I like vegetables.", name: 'origin7', labels: scale_1},
+      {prompt: "I like fruit.", name: 'origin7', labels: scale_1},
+      {prompt: "I like meat.", name: 'origin7', labels: scale_1}
+    ]
+  };
+  var likert_page_origin_8 = {
+    type: 'survey-likert',
+    questions: [
+      {prompt: "I like vegetables.", name: 'origin8', labels: scale_1},
+      {prompt: "I like fruit.", name: 'origin8', labels: scale_1},
+      {prompt: "I like meat.", name: 'origin8', labels: scale_1}
+    ]
+  };
+  var likert_page_origin_9 = {
+    type: 'survey-likert',
+    questions: [
+      {prompt: "I like vegetables.", name: 'origin9', labels: scale_1},
+      {prompt: "I like fruit.", name: 'origin9', labels: scale_1},
+      {prompt: "I like meat.", name: 'origin9', labels: scale_1}
+    ]
+  };
+  var likert_page_origin_10 = {
+    type: 'survey-likert',
+    questions: [
+      {prompt: "I like vegetables.", name: 'origin10', labels: scale_1},
+      {prompt: "I like fruit.", name: 'origin10', labels: scale_1},
+      {prompt: "I like meat.", name: 'origin10', labels: scale_1}
+    ]
+  };
   function downloadCSV(){
 
     console.log(global_dict.length);
@@ -135,7 +282,7 @@ for(var i  in jbSplit){
 saveData("experiment_data", jsPsych.data.get().csv())
 }
 function saveData(name, data){
-    // console.log("들어옴");
+    console.log("들어옴");
     var xhr = new XMLHttpRequest();
     xhr.open('POST', 'write_data_tmp.php'); // 'write_data.php' is the path to the php file described above.
     xhr.setRequestHeader('Content-Type', 'application/json');

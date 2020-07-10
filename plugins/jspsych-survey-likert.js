@@ -109,16 +109,34 @@ jsPsych.plugins['survey-likert'] = (function() {
 
     //extracting order 
     var img_tmp = trial.questions[0].name;
-    img_tmp = img_tmp.substr(4);
 
-    if(window.screen.width>=550){
-      html+= '<img src = "./img/happy_test_data/data'+img_tmp+'.png" style = "position: relative; padding-top : 10%;"></img>';
+    if(img_tmp[0]=="o"){
+      //original images
+      img_tmp = img_tmp.substr(6);
+
+      if(window.screen.width>=550){
+        html+= '<img src = "./img/happy_test_data/origin'+img_tmp+'.png" style = "position: relative; width:50%; padding-top : 5%;"></img>';
+      }
+      else{
+        html+= '<img src = "./img/happy_test_data/origin'+img_tmp+'.png" ></img>';
+      }
+      
+      html += '<form id="jspsych-survey-likert-form">';
+
     }
     else{
-      html+= '<img src = "./img/happy_test_data/data'+img_tmp+'.png" ></img>';
-    }
 
-    html += '<form id="jspsych-survey-likert-form">';
+      img_tmp = img_tmp.substr(4);
+
+      if(window.screen.width>=550){
+        html+= '<img src = "./img/happy_test_data/data'+img_tmp+'.png" style = "position: relative; width:50%; padding-top : 5%;"></img>';
+      }
+      else{
+        html+= '<img src = "./img/happy_test_data/data'+img_tmp+'.png" ></img>';
+      }
+      
+      html += '<form id="jspsych-survey-likert-form">';
+    }
 
     // add likert scale questions ///
     // generate question order. this is randomized here as opposed to randomizing the order of trial.questions
@@ -137,14 +155,16 @@ jsPsych.plugins['survey-likert'] = (function() {
       console.log(trial.questions.length);
       var temp = i+1;
       html += '<label class="jspsych-survey-likert-statement">' + 
-      '<img src="img/SAM/SAM'+temp+'_1.png" style = "width : 15%;"></img>' + 
-      '<img src="img/SAM/SAM'+temp+'_2.png" style = "width : 15%;"></img>' + 
-      '<img src="img/SAM/SAM'+temp+'_3.png" style = "width : 15%;"></img>' + 
-      '<img src="img/SAM/SAM'+temp+'_4.png" style = "width : 15%;"></img>' + 
-      '<img src="img/SAM/SAM'+temp+'_5.png" style = "width : 15%;"></img>' + 
+      '<img src="img/SAM/SAM'+temp+'_1.png" style = "width : 10%;"></img>' + 
+      '<img src="img/SAM/SAM'+temp+'_2.png" style = "width : 10%;"></img>' + 
+      '<img src="img/SAM/SAM'+temp+'_3.png" style = "width : 10%;"></img>' + 
+      '<img src="img/SAM/SAM'+temp+'_4.png" style = "width : 10%;"></img>' + 
+      '<img src="img/SAM/SAM'+temp+'_5.png" style = "width : 10%;"></img>' + 
+      '<img src="img/SAM/SAM'+temp+'_6.png" style = "width : 10%;"></img>' + 
+      '<img src="img/SAM/SAM'+temp+'_7.png" style = "width : 10%;"></img>' + 
       '</label>';
       // add options
-      var width = 100 / question.labels.length;
+      var width = 70 / question.labels.length;
       var options_string = '<ul class="jspsych-survey-likert-opts" data-name="'+question.name+'" data-radio-group="Q' + question_order[i] + '">';
       for (var j = 0; j < question.labels.length; j++) {
         options_string += '<li style="width:' + width + '%"><input type="radio" name="Q' + question_order[i] + '" value="' + j + '"';

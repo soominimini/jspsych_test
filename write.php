@@ -1,3 +1,5 @@
+<!-- xampp start 켜서 server on 시킨 다음에 로컬 접속 -->
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -14,24 +16,52 @@
   </head>
   <script>
     var timeline = [];
-    timeline.push(likert_page);
-    timeline.push(likert_page2);
-    
+        timeline.push(likert_page);
+        timeline.push(likert_page2);
         timeline.push(likert_page3);
         timeline.push(likert_page4);
+        timeline.push(likert_page5);
+        timeline.push(likert_page6);
+        timeline.push(likert_page7);
+        timeline.push(likert_page8);
+        timeline.push(likert_page9);
+        timeline.push(likert_page10);
+        //원본 사진
+        timeline.push(likert_page_origin_1);
+        timeline.push(likert_page_origin_2);
+        timeline.push(likert_page_origin_3);
+        timeline.push(likert_page_origin_4);
+        timeline.push(likert_page_origin_5);
+        timeline.push(likert_page_origin_6);
+        timeline.push(likert_page_origin_7);
+        timeline.push(likert_page_origin_8);
+        timeline.push(likert_page_origin_9);
+        timeline.push(likert_page_origin_10);
+        // timeline.push(likert_page11);
+        // timeline.push(likert_page12);
+        // timeline.push(likert_page13);
+        // timeline.push(likert_page14);
+        // timeline.push(likert_page15);
+        // timeline.push(likert_page16);
+        // timeline.push(likert_page17);
+        // timeline.push(likert_page18);
+        // timeline.push(likert_page19);
+        // timeline.push(likert_page20);
+        // timeline.push(likert_page21);
+        // timeline.push(likert_page22);
+        // timeline.push(likert_page23);
+        // timeline.push(likert_page24);
          timeline.push(last_page);   
       //   timeline.push(trial_data);
          /* start the experiment */
         function saveData(name, data){
-        console.log("들어옴");
-        console.log(data);  
-
         var xhr = new XMLHttpRequest();
         xhr.open('POST', 'write_data_tmp.php'); // 'write_data.php' is the path to the php file described above.
         xhr.setRequestHeader('Content-Type', 'application/json');
         xhr.send(JSON.stringify({filename: name, filedata: data}));
 
 }
+
 
 
 // call the saveData function after the experiment is over
