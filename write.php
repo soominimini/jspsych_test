@@ -16,6 +16,9 @@
   </head>
   <script>
     var timeline = [];
+        timeline.push(instructions1);
+        timeline.push(instructions2);
+        timeline.push(instructions3);
         timeline.push(likert_page);
         timeline.push(likert_page2);
         timeline.push(likert_page3);

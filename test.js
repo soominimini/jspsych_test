@@ -9,19 +9,27 @@ var welcome1 = {
     stimulus: "다음과 같은 ~~가 나옵니다. 이 중에서 가장 사진의 사람의 감정과 가까운 것을 고르세요"
   };
  /* define instructions trial */
- var instructions = {
+ var instructions1 = {
     type: "html-keyboard-response",
-    stimulus: "<p>다음과 같은 ~~가 나옵니다.</p>"+
-        "<p>If the circle is <strong>blue</strong>, " +
-        "press the letter F on the keyboard as fast as you can.</p>" +
-        "<p>If the circle is <strong>orange</strong>, press the letter J " +
-        "as fast as you can.</p>" +
-        "<div style='width: 100%;' >"+
-        "<img src='img/SAM.png' style = 'width : 80%;'></img>" +
-        "<p class='small'><strong>Press the F key</strong></p></div>" +
-        "<div class='float: right;'><img src='img/orange.png'></img>" +
-        "<p class='small'><strong>Press the J key</strong></p></div>" +
-        "</div>"+
+    stimulus: "<p>안내문 | Instruction</p>"+
+        "<p>실험을 시작하면 여러 개의 사진을 보게 될 것입니다.</p> " +
+        "<p>사진을 주의 깊게 본 다음, 그 사진 속 인물이 어떤 감정인지 응답하시면 됩니다. <strong>각 사진마다 두 개의 선택지에 대답하게 됩니다.</strong></p>" +
+        "<p>Press any key to begin.</p>",
+    // post_trial_gap: 2000
+  };
+  var instructions2 = {
+    type: "html-keyboard-response",
+    stimulus: 
+    "<img src='img/instruction1.jpg' style = 'width : 60%;'></img>" +
+    "<p>첫번째 선택지에는 위와 같이 찡그린 그림에서 웃는 그림까지 총 일곱 개의 보기가 있습니다. 만약 사진을 보고 행복, 기쁨, 흡족함, 만족스러움, 희망에 찬 느낌 등이 느껴 진다면, 가장 오른쪽의 웃는 그림을 선택하면 됩니다. 반면에 불쾌함, 짜증, 불만스러움, 우울함, 좌절감, 지루함 등이 느껴지면 가장 왼쪽의 찡그린 그림을 선택하면 됩니다. 양 끝 사이의 그림들을 선택함으로써 중간 정도의 느낌을 나타낼 수 있습니다.</p> " +
+        "<p>Press any key to begin.</p>",
+    // post_trial_gap: 2000
+  };
+  var instructions3 = {
+    type: "html-keyboard-response",
+    stimulus: 
+    "<img src='img/instruction2.jpg' style = 'width : 60%;'></img>" +
+    "<p>두번째 선택지에는 침착한(각성도가 낮은) 그림에서 흥분된(각성도가 높은)그림까지 총 다섯 개의 보기가 있습니다. 만약 사진을 보고, 감정의 동요, 흥분, 열광하거나, 초조하거나,  각성된 것처럼 느껴진다면 가장 오른쪽 그림을 선택하면 됩니다. 반면에 편안하거나, 평온하거나, 차분하거나, 느긋하거나, 둔감하거나,  졸린 것처럼 느껴진다면 가장 왼쪽 그림을 선택하면 됩니다. 마찬가지로 양 끝 사이의 그림들을 선택함으로써 중간 정도의 느낌을 나타낼 수 있습니다. 만약 얼굴 표정의 각성수준이 중간 정도로 느껴진다면,  위와 같이 가운데 그림을 선택하면 됩니다.</p> " +
         "<p>Press any key to begin.</p>",
     // post_trial_gap: 2000
   };
