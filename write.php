@@ -16,9 +16,11 @@
   </head>
   <script>
     var timeline = [];
+    //instructions
         timeline.push(instructions1);
         timeline.push(instructions2);
         timeline.push(instructions3);
+        //blurred picture
         timeline.push(likert_page);
         timeline.push(likert_page2);
         timeline.push(likert_page3);
@@ -29,6 +31,37 @@
         timeline.push(likert_page8);
         timeline.push(likert_page9);
         timeline.push(likert_page10);
+        timeline.push(likert_page11);
+        timeline.push(likert_page12);
+        timeline.push(likert_page13);
+        timeline.push(likert_page14);
+        timeline.push(likert_page15);
+        timeline.push(likert_page16);
+        timeline.push(likert_page17);
+        timeline.push(likert_page18);
+        timeline.push(likert_page19);
+        timeline.push(likert_page20);
+        timeline.push(likert_page21);
+        timeline.push(likert_page22);
+        timeline.push(likert_page23);
+        timeline.push(likert_page24);
+        timeline.push(likert_page25);
+        timeline.push(likert_page26);
+        timeline.push(likert_page27);
+        timeline.push(likert_page28);
+        timeline.push(likert_page29);
+        timeline.push(likert_page30);
+        timeline.push(likert_page31);
+        timeline.push(likert_page32);
+        timeline.push(likert_page33);
+        timeline.push(likert_page34);
+        timeline.push(likert_page35);
+        timeline.push(likert_page36);
+        timeline.push(likert_page37);
+        timeline.push(likert_page38);
+        timeline.push(likert_page39);
+        timeline.push(likert_page40);
+
         //원본 사진
         timeline.push(likert_page_origin_1);
         timeline.push(likert_page_origin_2);
@@ -40,20 +73,33 @@
         timeline.push(likert_page_origin_8);
         timeline.push(likert_page_origin_9);
         timeline.push(likert_page_origin_10);
-        // timeline.push(likert_page11);
-        // timeline.push(likert_page12);
-        // timeline.push(likert_page13);
-        // timeline.push(likert_page14);
-        // timeline.push(likert_page15);
-        // timeline.push(likert_page16);
-        // timeline.push(likert_page17);
-        // timeline.push(likert_page18);
-        // timeline.push(likert_page19);
-        // timeline.push(likert_page20);
-        // timeline.push(likert_page21);
-        // timeline.push(likert_page22);
-        // timeline.push(likert_page23);
-        // timeline.push(likert_page24);
+        timeline.push(likert_page_origin_11);
+        timeline.push(likert_page_origin_12);
+        timeline.push(likert_page_origin_13);
+        timeline.push(likert_page_origin_14);
+        timeline.push(likert_page_origin_15);
+        timeline.push(likert_page_origin_16);
+        timeline.push(likert_page_origin_17);
+        timeline.push(likert_page_origin_18);
+        timeline.push(likert_page_origin_19);
+        timeline.push(likert_page_origin_20);
+        timeline.push(likert_page_origin_21);
+        timeline.push(likert_page_origin_22);
+        timeline.push(likert_page_origin_23);
+        timeline.push(likert_page_origin_24);
+        timeline.push(likert_page_origin_25);
+        timeline.push(likert_page_origin_26);
+        timeline.push(likert_page_origin_27);
+        timeline.push(likert_page_origin_28);
+        timeline.push(likert_page_origin_29);
+        timeline.push(likert_page_origin_30);
+        timeline.push(likert_page_origin_31);
+        timeline.push(likert_page_origin_32);
+        timeline.push(likert_page_origin_33);
+        timeline.push(likert_page_origin_34);
+        timeline.push(likert_page_origin_35);
+        timeline.push(likert_page_origin_36);
+
          timeline.push(last_page);   
       //   timeline.push(trial_data);
          /* start the experiment */
