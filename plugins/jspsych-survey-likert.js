@@ -101,7 +101,7 @@ jsPsych.plugins['survey-likert'] = (function() {
     if(trial.preamble !== null){
       html += '<div id="jspsych-survey-likert-preamble" class="jspsych-survey-likert-preamble">'+trial.preamble+'</div>';
     }
-    for(var i =0; i<3; i++){
+    for(var i =0; i<2; i++){
 
       console.log(trial.questions[i].name);
 
@@ -154,6 +154,7 @@ jsPsych.plugins['survey-likert'] = (function() {
       // add question
       console.log(trial.questions.length);
       var temp = i+1;
+      html+='<div style="border:5px solid; margin:10px; color : #efefef;">';
       html += '<label class="jspsych-survey-likert-statement">' + 
       '<img src="img/SAM/SAM'+temp+'_1.png" style = "width : 10%;"></img>' + 
       '<img src="img/SAM/SAM'+temp+'_2.png" style = "width : 10%;"></img>' + 
@@ -173,7 +174,7 @@ jsPsych.plugins['survey-likert'] = (function() {
         }
         options_string += '><label class="jspsych-survey-likert-opt-label">' + question.labels[j] + '</label></li>';
       }
-      options_string += '</ul>';
+      options_string += '</ul></div>';
       html += options_string;
     }
 

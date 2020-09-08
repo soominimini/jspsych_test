@@ -1,44 +1,51 @@
 
 /* define welcome message trial */
-var welcome1 = {
-    type: "html-keyboard-response",
-    stimulus: "이 실험은 ~~~에 대한 것입니다. 실험을 시작하려면 버튼을 누르세요"
-  };
-  var welcome2 = {
-    type: "html-keyboard-response",
-    stimulus: "다음과 같은 ~~가 나옵니다. 이 중에서 가장 사진의 사람의 감정과 가까운 것을 고르세요"
-  };
- /* define instructions trial */
- var instructions1 = {
-    type: "html-keyboard-response",
-    stimulus: "<p>안내문 | Instruction</p>"+
-        "<p>실험을 시작하면 여러 개의 사진을 보게 될 것입니다.</p> " +
-        "<p>사진을 주의 깊게 본 다음, 그 사진 속 인물이 어떤 감정인지 응답하시면 됩니다. <strong>각 사진마다 두 개의 선택지에 대답하게 됩니다.</strong></p>" +
-        "<p>Press any key to begin.</p>",
-    // post_trial_gap: 2000
-  };
-  var instructions2 = {
-    type: "html-keyboard-response",
-    stimulus: 
-    "<img src='img/instruction1.jpg' style = 'width : 60%;'></img>" +
-    "<p>첫번째 선택지에는 위와 같이 찡그린 그림에서 웃는 그림까지 총 일곱 개의 보기가 있습니다. 만약 사진을 보고 행복, 기쁨, 흡족함, 만족스러움, 희망에 찬 느낌 등이 느껴 진다면, 가장 오른쪽의 웃는 그림을 선택하면 됩니다. 반면에 불쾌함, 짜증, 불만스러움, 우울함, 좌절감, 지루함 등이 느껴지면 가장 왼쪽의 찡그린 그림을 선택하면 됩니다. 양 끝 사이의 그림들을 선택함으로써 중간 정도의 느낌을 나타낼 수 있습니다.</p> " +
-        "<p>Press any key to begin.</p>",
-    // post_trial_gap: 2000
-  };
-  var instructions3 = {
-    type: "html-keyboard-response",
-    stimulus: 
-    "<img src='img/instruction2.jpg' style = 'width : 60%;'></img>" +
-    "<p>두번째 선택지에는 침착한(각성도가 낮은) 그림에서 흥분된(각성도가 높은)그림까지 총 다섯 개의 보기가 있습니다. 만약 사진을 보고, 감정의 동요, 흥분, 열광하거나, 초조하거나,  각성된 것처럼 느껴진다면 가장 오른쪽 그림을 선택하면 됩니다. 반면에 편안하거나, 평온하거나, 차분하거나, 느긋하거나, 둔감하거나,  졸린 것처럼 느껴진다면 가장 왼쪽 그림을 선택하면 됩니다. 마찬가지로 양 끝 사이의 그림들을 선택함으로써 중간 정도의 느낌을 나타낼 수 있습니다. 만약 얼굴 표정의 각성수준이 중간 정도로 느껴진다면,  위와 같이 가운데 그림을 선택하면 됩니다.</p> " +
-        "<p>Press any key to begin.</p>",
-    // post_trial_gap: 2000
-  };
+var global_name  = "";
+// var user_name_func = function(elem) {
+//   var name = document.getElementById('user_name');
+//   var btn = document.getElementById('start');
+// if (btn.clicked()== true) {
+//   getName(name);
+// return true;
+// }
+// };
 
-  var trial = {
-    type: 'html-keyboard-response',
-    stimulus: 'This is a new trial.'
-  }
-  
+var external_html = {
+  type:"external-html",
+  url: "instruction_page.html",
+  cont_btn: "start",
+  cont_key: 1,
+  // execute_script : true,
+  // check_fn: user_name_func
+};
+var external_html2 = {
+  type:"external-html",
+  url: "instruction_page2.html",
+  cont_btn: "start",
+  cont_key: 1,
+  // execute_script : true,
+  // check_fn: user_name_func
+};
+var external_html3 = {
+  type:"external-html",
+  url: "instruction_page3.html",
+  cont_btn: "start",
+  cont_key: 1,
+  // execute_script : true,
+  // check_fn: user_name_func
+};
+var data_save ={
+  type: 'call-function',
+  func: saveDBdata
+};
+ /* define instructions trial */
+
+var trial = {
+
+  type : 'html-keyboard-response',
+  stimulus : 'This is a new trial'
+}
+
   var new_timeline = {
     timeline: [trial]
   }
@@ -58,8 +65,8 @@ var welcome1 = {
     type: 'survey-likert',
     questions: [
       {name: 'data1', labels: scale_1},
-      { name: 'data1', labels: scale_1},
-      {name: 'data1', labels: scale_1}
+      { name: 'data1', labels: scale_1}
+      // {name: 'data1', labels: scale_1}
     ],
     // randomize_question_order: true //질문 순서 랜덤
   };
@@ -727,10 +734,36 @@ var likert_page_origin_12 = {
 document.body.removeChild(downloadLink);
 
 }
+function getName(){
+  global_name = document.getElementById('user_name');
+  document.write(global_name);
+  // alert(global_name);
+}
 
 function getData(){
+    // generate a random subject ID with 15 characters
+    var current_node_id = jsPsych.currentTimelineNodeID();
+
+    var data_from_current_node = jsPsych.data.getDataByTimelineNode(current_node_id);
+
+    // pick a random condition for the subject at the start of the experiment
+    // var condition_assignment = jsPsych.randomization.sampleWithoutReplacement(['conditionA', 'conditionB', 'conditionC'], 1)[0];
+    
+    // record the condition assignment in the jsPsych data
+    // this adds a property called 'subject' and a property called 'condition' to every trial
+    // jsPsych.data.addProperties({
+    //   subject: subject_id,
+    //   // condition: condition_assignment
+    // });
+    // jsPsych.data.addProperties({subject: 1, condition: 'control'});
+
+
 var all_data = jsPsych.data.get();
 // get csv representation of data and log to console
+document.write(current_node_id);
+document.write(data_from_current_node);
+
+
 console.log(all_data.csv());
 var tmp_all_data = jsPsych.data.get().csv();
 console.log(tmp_all_data.length);
@@ -740,16 +773,38 @@ for(var i  in jbSplit){
 }
 //리커트 응답만 추출
 // csv에 저장
-saveData("experiment_data", jsPsych.data.get().csv())
+saveData(data_from_current_node, jsPsych.data.get().csv());
 }
 function saveData(name, data){
-    console.log("들어옴");
     var xhr = new XMLHttpRequest();
     xhr.open('POST', 'write_data_tmp.php'); // 'write_data.php' is the path to the php file described above.
     xhr.setRequestHeader('Content-Type', 'application/json');
     xhr.send(JSON.stringify({filename: name, filedata: data}));
+
+  //   var xhr2 = new XMLHttpRequest();
+  //   xhr2.open('POST', 'write_data.php'); // change 'write_data.php' to point to php script.
+  //   xhr2.setRequestHeader('Content-Type', 'application/json');
+  //   xhr2.onload = function() {
+  //   if(xhr2.status == 200){
+  //     var response = JSON.parse(xhr2.responseText);
+  //     document.write(response.success);
+  //   }
+  // };
+  // xhr2.send(jsPsych.data.get().json());
 }
 
+var saveDBdata = function(){
+  var xhr2 = new XMLHttpRequest();
+  xhr2.open('POST', 'write_data.php'); // change 'write_data.php' to point to php script.
+  xhr2.setRequestHeader('Content-Type', 'application/json');
+  xhr2.onload = function() {
+  if(xhr2.status == 200){
+    var response = JSON.parse(xhr2.responseText);
+    document.write(response.success);
+  }
+};
+xhr2.send(jsPsych.data.get().json());
+}
 
   //last page
   var last_page = {
