@@ -79,8 +79,7 @@ var trial = {
     type: 'survey-likert',
     questions: [
       { name: 'data3', labels: scale_1},
-      {name: 'data3', labels: scale_1},
-      { name: 'data3', labels: scale_1}
+      {name: 'data3', labels: scale_1}
     ],
     // randomize_question_order: true //질문 순서 랜덤
   };
@@ -88,8 +87,7 @@ var trial = {
     type: 'survey-likert',
     questions: [
       {prompt: "I like vegetables.", name: 'data4', labels: scale_1},
-      {prompt: "I like fruit.", name: 'data4', labels: scale_1},
-      {prompt: "I like meat.", name: 'data4', labels: scale_1}
+      {prompt: "I like fruit.", name: 'data4', labels: scale_1}
     ],
     // randomize_question_order: true //질문 순서 랜덤
     
@@ -98,8 +96,7 @@ var trial = {
     type: 'survey-likert',
     questions: [
       {prompt: "I like vegetables.", name: 'data5', labels: scale_1},
-      {prompt: "I like fruit.", name: 'data5', labels: scale_1},
-      {prompt: "I like meat.", name: 'data5', labels: scale_1}
+      {prompt: "I like fruit.", name: 'data5', labels: scale_1}
     ]
   };
 
@@ -107,8 +104,7 @@ var trial = {
     type: 'survey-likert',
     questions: [
       {prompt: "I like vegetables.", name: 'data6', labels: scale_1},
-      {prompt: "I like fruit.", name: 'data6', labels: scale_1},
-      {prompt: "I like meat.", name: 'data6', labels: scale_1}
+      {prompt: "I like fruit.", name: 'data6', labels: scale_1}
     ]
   };
 
@@ -116,8 +112,7 @@ var trial = {
     type: 'survey-likert',
     questions: [
       {prompt: "I like vegetables.", name: 'data5', labels: scale_1},
-      {prompt: "I like fruit.", name: 'data5', labels: scale_1},
-      {prompt: "I like meat.", name: 'data5', labels: scale_1}
+      {prompt: "I like fruit.", name: 'data5', labels: scale_1}
     ]
   };
 
@@ -125,8 +120,7 @@ var trial = {
     type: 'survey-likert',
     questions: [
       {prompt: "I like vegetables.", name: 'data7', labels: scale_1},
-      {prompt: "I like fruit.", name: 'data7', labels: scale_1},
-      {prompt: "I like meat.", name: 'data7', labels: scale_1}
+      {prompt: "I like fruit.", name: 'data7', labels: scale_1}
     ]
   };
 
@@ -134,8 +128,7 @@ var trial = {
     type: 'survey-likert',
     questions: [
       {prompt: "I like vegetables.", name: 'data8', labels: scale_1},
-      {prompt: "I like fruit.", name: 'data8', labels: scale_1},
-      {prompt: "I like meat.", name: 'data8', labels: scale_1}
+      {prompt: "I like fruit.", name: 'data8', labels: scale_1}
     ]
   };
 
@@ -143,8 +136,7 @@ var trial = {
     type: 'survey-likert',
     questions: [
       {prompt: "I like vegetables.", name: 'data9', labels: scale_1},
-      {prompt: "I like fruit.", name: 'data9', labels: scale_1},
-      {prompt: "I like meat.", name: 'data9', labels: scale_1}
+      {prompt: "I like fruit.", name: 'data9', labels: scale_1}
     ]
   };
 
@@ -152,167 +144,146 @@ var trial = {
     type: 'survey-likert',
     questions: [
       {prompt: "I like vegetables.", name: 'data10', labels: scale_1},
-      {prompt: "I like fruit.", name: 'data10', labels: scale_1},
-      {prompt: "I like meat.", name: 'data10', labels: scale_1}
+      {prompt: "I like fruit.", name: 'data10', labels: scale_1}
     ]
   };
   var likert_page11 = {
     type: 'survey-likert',
     questions: [
       {prompt: "I like vegetables.", name: 'data11', labels: scale_1},
-      {prompt: "I like fruit.", name: 'data11', labels: scale_1},
-      {prompt: "I like meat.", name: 'data11', labels: scale_1}
+      {prompt: "I like fruit.", name: 'data11', labels: scale_1}
     ]
   };
   var likert_page12 = {
     type: 'survey-likert',
     questions: [
       {prompt: "I like vegetables.", name: 'data12', labels: scale_1},
-      {prompt: "I like fruit.", name: 'data12', labels: scale_1},
-      {prompt: "I like meat.", name: 'data12', labels: scale_1}
+      {prompt: "I like fruit.", name: 'data12', labels: scale_1}
     ]
   };
   var likert_page13 = {
     type: 'survey-likert',
     questions: [
       {prompt: "I like vegetables.", name: 'data13', labels: scale_1},
-      {prompt: "I like fruit.", name: 'data13', labels: scale_1},
-      {prompt: "I like meat.", name: 'data13', labels: scale_1}
+      {prompt: "I like fruit.", name: 'data13', labels: scale_1}
     ]
   };
   var likert_page14 = {
     type: 'survey-likert',
     questions: [
       {prompt: "I like vegetables.", name: 'data14', labels: scale_1},
-      {prompt: "I like fruit.", name: 'data14', labels: scale_1},
-      {prompt: "I like meat.", name: 'data14', labels: scale_1}
+      {prompt: "I like fruit.", name: 'data14', labels: scale_1}
     ]
   };
   var likert_page15 = {
     type: 'survey-likert',
     questions: [
       {prompt: "I like vegetables.", name: 'data15', labels: scale_1},
-      {prompt: "I like fruit.", name: 'data15', labels: scale_1},
-      {prompt: "I like meat.", name: 'data15', labels: scale_1}
+      {prompt: "I like fruit.", name: 'data15', labels: scale_1}
     ]
   };
   var likert_page16 = {
     type: 'survey-likert',
     questions: [
       {prompt: "I like vegetables.", name: 'data16', labels: scale_1},
-      {prompt: "I like fruit.", name: 'data16', labels: scale_1},
-      {prompt: "I like meat.", name: 'data16', labels: scale_1}
+      {prompt: "I like fruit.", name: 'data16', labels: scale_1}
     ]
   };
   var likert_page17 = {
     type: 'survey-likert',
     questions: [
       {prompt: "I like vegetables.", name: 'data17', labels: scale_1},
-      {prompt: "I like fruit.", name: 'data17', labels: scale_1},
-      {prompt: "I like meat.", name: 'data17', labels: scale_1}
+      {prompt: "I like fruit.", name: 'data17', labels: scale_1}
     ]
   };
   var likert_page18 = {
     type: 'survey-likert',
     questions: [
       {prompt: "I like vegetables.", name: 'data18', labels: scale_1},
-      {prompt: "I like fruit.", name: 'data18', labels: scale_1},
-      {prompt: "I like meat.", name: 'data18', labels: scale_1}
+      {prompt: "I like fruit.", name: 'data18', labels: scale_1}
     ]
   };
   var likert_page19 = {
     type: 'survey-likert',
     questions: [
       {prompt: "I like vegetables.", name: 'data19', labels: scale_1},
-      {prompt: "I like fruit.", name: 'data19', labels: scale_1},
-      {prompt: "I like meat.", name: 'data19', labels: scale_1}
+      {prompt: "I like fruit.", name: 'data19', labels: scale_1}
     ]
   };
   var likert_page20 = {
     type: 'survey-likert',
     questions: [
       {prompt: "I like vegetables.", name: 'data20', labels: scale_1},
-      {prompt: "I like fruit.", name: 'data20', labels: scale_1},
-      {prompt: "I like meat.", name: 'data20', labels: scale_1}
+      {prompt: "I like fruit.", name: 'data20', labels: scale_1}
     ]
   };
   var likert_page21 = {
     type: 'survey-likert',
     questions: [
       {prompt: "I like vegetables.", name: 'data21', labels: scale_1},
-      {prompt: "I like fruit.", name: 'data21', labels: scale_1},
-      {prompt: "I like meat.", name: 'data21', labels: scale_1}
+      {prompt: "I like fruit.", name: 'data21', labels: scale_1}
     ]
   };
   var likert_page22 = {
     type: 'survey-likert',
     questions: [
       {prompt: "I like vegetables.", name: 'data22', labels: scale_1},
-      {prompt: "I like fruit.", name: 'data22', labels: scale_1},
-      {prompt: "I like meat.", name: 'data22', labels: scale_1}
+      {prompt: "I like fruit.", name: 'data22', labels: scale_1}
     ]
   };
   var likert_page23 = {
     type: 'survey-likert',
     questions: [
       {prompt: "I like vegetables.", name: 'data23', labels: scale_1},
-      {prompt: "I like fruit.", name: 'data23', labels: scale_1},
-      {prompt: "I like meat.", name: 'data23', labels: scale_1}
+      {prompt: "I like fruit.", name: 'data23', labels: scale_1}
     ]
   };
   var likert_page24 = {
     type: 'survey-likert',
     questions: [
       {prompt: "I like vegetables.", name: 'data24', labels: scale_1},
-      {prompt: "I like fruit.", name: 'data24', labels: scale_1},
-      {prompt: "I like meat.", name: 'data24', labels: scale_1}
+      {prompt: "I like fruit.", name: 'data24', labels: scale_1}
     ]
   };
   var likert_page25 = {
     type: 'survey-likert',
     questions: [
       {prompt: "I like vegetables.", name: 'data25', labels: scale_1},
-      {prompt: "I like fruit.", name: 'data25', labels: scale_1},
-      {prompt: "I like meat.", name: 'data25', labels: scale_1}
+      {prompt: "I like fruit.", name: 'data25', labels: scale_1}
     ]
   };
   var likert_page26 = {
     type: 'survey-likert',
     questions: [
       {prompt: "I like vegetables.", name: 'data26', labels: scale_1},
-      {prompt: "I like fruit.", name: 'data26', labels: scale_1},
-      {prompt: "I like meat.", name: 'data26', labels: scale_1}
+      {prompt: "I like fruit.", name: 'data26', labels: scale_1}
     ]
   };
   var likert_page27 = {
     type: 'survey-likert',
     questions: [
       {prompt: "I like vegetables.", name: 'data27', labels: scale_1},
-      {prompt: "I like fruit.", name: 'data27', labels: scale_1},
-      {prompt: "I like meat.", name: 'data27', labels: scale_1}
+      {prompt: "I like fruit.", name: 'data27', labels: scale_1}
     ]
   };
   var likert_page28 = {
     type: 'survey-likert',
     questions: [
       {prompt: "I like vegetables.", name: 'data28', labels: scale_1},
-      {prompt: "I like fruit.", name: 'data28', labels: scale_1},
-      {prompt: "I like meat.", name: 'data28', labels: scale_1}
+      {prompt: "I like fruit.", name: 'data28', labels: scale_1}
     ]
   };
   var likert_page29 = {
     type: 'survey-likert',
     questions: [
       {prompt: "I like vegetables.", name: 'data29', labels: scale_1},
-      {prompt: "I like fruit.", name: 'data29', labels: scale_1},
-      {prompt: "I like meat.", name: 'data29', labels: scale_1}
+      {prompt: "I like fruit.", name: 'data29', labels: scale_1}
     ]
   };
   var likert_page30 = {
     type: 'survey-likert',
     questions: [
       {name: 'data30', labels: scale_1},
-      { name: 'data30', labels: scale_1},
       { name: 'data30', labels: scale_1}
     ]
   };
@@ -320,7 +291,6 @@ var trial = {
     type: 'survey-likert',
     questions: [
       {name: 'data31', labels: scale_1},
-      { name: 'data31', labels: scale_1},
       { name: 'data31', labels: scale_1}
     ]
   };
@@ -328,7 +298,6 @@ var trial = {
     type: 'survey-likert',
     questions: [
       {name: 'data32', labels: scale_1},
-      { name: 'data32', labels: scale_1},
       { name: 'data32', labels: scale_1}
     ]
   };
@@ -336,7 +305,6 @@ var trial = {
     type: 'survey-likert',
     questions: [
       {name: 'data33', labels: scale_1},
-      { name: 'data33', labels: scale_1},
       { name: 'data33', labels: scale_1}
     ]
   };
@@ -345,7 +313,6 @@ var trial = {
     type: 'survey-likert',
     questions: [
       {name: 'data34', labels: scale_1},
-      { name: 'data34', labels: scale_1},
       { name: 'data34', labels: scale_1}
     ]
   };
@@ -354,7 +321,6 @@ var trial = {
     type: 'survey-likert',
     questions: [
       {name: 'data35', labels: scale_1},
-      { name: 'data35', labels: scale_1},
       { name: 'data35', labels: scale_1}
     ]
   };
@@ -362,7 +328,6 @@ var trial = {
     type: 'survey-likert',
     questions: [
       {name: 'data36', labels: scale_1},
-      { name: 'data36', labels: scale_1},
       { name: 'data36', labels: scale_1}
     ]
   };
@@ -370,7 +335,6 @@ var trial = {
     type: 'survey-likert',
     questions: [
       {name: 'data37', labels: scale_1},
-      { name: 'data37', labels: scale_1},
       { name: 'data37', labels: scale_1}
     ]
   };
@@ -378,7 +342,6 @@ var trial = {
     type: 'survey-likert',
     questions: [
       {name: 'data38', labels: scale_1},
-      { name: 'data38', labels: scale_1},
       { name: 'data38', labels: scale_1}
     ]
   };
@@ -386,7 +349,6 @@ var trial = {
     type: 'survey-likert',
     questions: [
       {name: 'data39', labels: scale_1},
-      { name: 'data39', labels: scale_1},
       { name: 'data39', labels: scale_1}
     ]
   };
@@ -394,7 +356,6 @@ var trial = {
     type: 'survey-likert',
     questions: [
       {name: 'data40', labels: scale_1},
-      { name: 'data40', labels: scale_1},
       { name: 'data40', labels: scale_1}
     ]
   };
@@ -405,7 +366,6 @@ var likert_page_origin_1 = {
     type: 'survey-likert',
     questions: [
       {name: 'origin1', labels: scale_1},
-      { name: 'origin1', labels: scale_1},
       { name: 'origin1', labels: scale_1}
     ]
   };
@@ -414,15 +374,13 @@ var likert_page_origin_2 = {
     type: 'survey-likert',
     questions: [
       { name: 'origin2', labels: scale_1},
-      { name: 'origin2', labels: scale_1},
-      {name: 'origin2', labels: scale_1}
+      { name: 'origin2', labels: scale_1}
     ]
   };
   
 var likert_page_origin_3 = {
     type: 'survey-likert',
     questions: [
-      { name: 'origin3', labels: scale_1},
       { name: 'origin3', labels: scale_1},
       { name: 'origin3', labels: scale_1}
     ]
@@ -431,63 +389,55 @@ var likert_page_origin_3 = {
     type: 'survey-likert',
     questions: [
       {prompt: "I like vegetables.", name: 'origin4', labels: scale_1},
-      {prompt: "I like fruit.", name: 'origin4', labels: scale_1},
-      {prompt: "I like meat.", name: 'origin4', labels: scale_1}
+      {prompt: "I like fruit.", name: 'origin4', labels: scale_1}
     ]
   };
   var likert_page_origin_5 = {
     type: 'survey-likert',
     questions: [
       {prompt: "I like vegetables.", name: 'origin5', labels: scale_1},
-      {prompt: "I like fruit.", name: 'origin5', labels: scale_1},
-      {prompt: "I like meat.", name: 'origin5', labels: scale_1}
+      {prompt: "I like fruit.", name: 'origin5', labels: scale_1}
     ]
   };
   var likert_page_origin_6 = {
     type: 'survey-likert',
     questions: [
       {prompt: "I like vegetables.", name: 'origin6', labels: scale_1},
-      {prompt: "I like fruit.", name: 'origin6', labels: scale_1},
-      {prompt: "I like meat.", name: 'origin6', labels: scale_1}
+      {prompt: "I like fruit.", name: 'origin6', labels: scale_1}
     ]
   };
   var likert_page_origin_7 = {
     type: 'survey-likert',
     questions: [
       {prompt: "I like vegetables.", name: 'origin7', labels: scale_1},
-      {prompt: "I like fruit.", name: 'origin7', labels: scale_1},
-      {prompt: "I like meat.", name: 'origin7', labels: scale_1}
+      {prompt: "I like fruit.", name: 'origin7', labels: scale_1}
     ]
   };
   var likert_page_origin_8 = {
     type: 'survey-likert',
     questions: [
       {prompt: "I like vegetables.", name: 'origin8', labels: scale_1},
-      {prompt: "I like fruit.", name: 'origin8', labels: scale_1},
-      {prompt: "I like meat.", name: 'origin8', labels: scale_1}
+      {prompt: "I like fruit.", name: 'origin8', labels: scale_1}
     ]
   };
   var likert_page_origin_9 = {
     type: 'survey-likert',
     questions: [
       {prompt: "I like vegetables.", name: 'origin9', labels: scale_1},
-      {prompt: "I like fruit.", name: 'origin9', labels: scale_1},
-      {prompt: "I like meat.", name: 'origin9', labels: scale_1}
+      {prompt: "I like fruit.", name: 'origin9', labels: scale_1}
     ]
   };
   var likert_page_origin_10 = {
     type: 'survey-likert',
     questions: [
       {prompt: "I like vegetables.", name: 'origin10', labels: scale_1},
-      {prompt: "I like fruit.", name: 'origin10', labels: scale_1},
-      {prompt: "I like meat.", name: 'origin10', labels: scale_1}
+      {prompt: "I like fruit.", name: 'origin10', labels: scale_1}
     ]
   };
     
 var likert_page_origin_11 = {
   type: 'survey-likert',
   questions: [
-    { name: 'origin11', labels: scale_1},
     { name: 'origin11', labels: scale_1},
     { name: 'origin11', labels: scale_1}
   ]
@@ -496,14 +446,12 @@ var likert_page_origin_12 = {
     type: 'survey-likert',
     questions: [
       { name: 'origin12', labels: scale_1},
-      { name: 'origin12', labels: scale_1},
       { name: 'origin12', labels: scale_1}
     ]
   };  
   var likert_page_origin_13 = {
       type: 'survey-likert',
       questions: [
-        { name: 'origin13', labels: scale_1},
         { name: 'origin13', labels: scale_1},
         { name: 'origin13', labels: scale_1}
       ]
@@ -512,14 +460,12 @@ var likert_page_origin_12 = {
         type: 'survey-likert',
         questions: [
           { name: 'origin14', labels: scale_1},
-          { name: 'origin14', labels: scale_1},
           { name: 'origin14', labels: scale_1}
         ]
       };  
       var likert_page_origin_15 = {
           type: 'survey-likert',
           questions: [
-            { name: 'origin15', labels: scale_1},
             { name: 'origin15', labels: scale_1},
             { name: 'origin15', labels: scale_1}
           ]
@@ -528,14 +474,12 @@ var likert_page_origin_12 = {
             type: 'survey-likert',
             questions: [
               { name: 'origin16', labels: scale_1},
-              { name: 'origin16', labels: scale_1},
               { name: 'origin16', labels: scale_1}
             ]
           };  
           var likert_page_origin_17 = {
               type: 'survey-likert',
               questions: [
-                { name: 'origin17', labels: scale_1},
                 { name: 'origin17', labels: scale_1},
                 { name: 'origin17', labels: scale_1}
               ]
@@ -544,14 +488,12 @@ var likert_page_origin_12 = {
                 type: 'survey-likert',
                 questions: [
                   { name: 'origin18', labels: scale_1},
-                  { name: 'origin18', labels: scale_1},
                   { name: 'origin18', labels: scale_1}
                 ]
               };
               var likert_page_origin_19 = {
                 type: 'survey-likert',
                 questions: [
-                  { name: 'origin19', labels: scale_1},
                   { name: 'origin19', labels: scale_1},
                   { name: 'origin19', labels: scale_1}
                 ]
@@ -560,14 +502,12 @@ var likert_page_origin_12 = {
                 type: 'survey-likert',
                 questions: [
                   { name: 'origin20', labels: scale_1},
-                  { name: 'origin20', labels: scale_1},
                   { name: 'origin20', labels: scale_1}
                 ]
               };
               var likert_page_origin_21 = {
                 type: 'survey-likert',
                 questions: [
-                  { name: 'origin21', labels: scale_1},
                   { name: 'origin21', labels: scale_1},
                   { name: 'origin21', labels: scale_1}
                 ]
@@ -576,14 +516,12 @@ var likert_page_origin_12 = {
                 type: 'survey-likert',
                 questions: [
                   { name: 'origin22', labels: scale_1},
-                  { name: 'origin22', labels: scale_1},
                   { name: 'origin22', labels: scale_1}
                 ]
               };
               var likert_page_origin_23 = {
                 type: 'survey-likert',
                 questions: [
-                  { name: 'origin23', labels: scale_1},
                   { name: 'origin23', labels: scale_1},
                   { name: 'origin23', labels: scale_1}
                 ]
@@ -592,14 +530,12 @@ var likert_page_origin_12 = {
                 type: 'survey-likert',
                 questions: [
                   { name: 'origin24', labels: scale_1},
-                  { name: 'origin24', labels: scale_1},
                   { name: 'origin24', labels: scale_1}
                 ]
               };
               var likert_page_origin_25 = {
                 type: 'survey-likert',
                 questions: [
-                  { name: 'origin25', labels: scale_1},
                   { name: 'origin25', labels: scale_1},
                   { name: 'origin25', labels: scale_1}
                 ]
@@ -608,14 +544,12 @@ var likert_page_origin_12 = {
                 type: 'survey-likert',
                 questions: [
                   { name: 'origin26', labels: scale_1},
-                  { name: 'origin26', labels: scale_1},
                   { name: 'origin26', labels: scale_1}
                 ]
               };
               var likert_page_origin_27 = {
                 type: 'survey-likert',
                 questions: [
-                  { name: 'origin27', labels: scale_1},
                   { name: 'origin27', labels: scale_1},
                   { name: 'origin27', labels: scale_1}
                 ]
@@ -624,7 +558,6 @@ var likert_page_origin_12 = {
                 type: 'survey-likert',
                 questions: [
                   { name: 'origin28', labels: scale_1},
-                  { name: 'origin28', labels: scale_1},
                   { name: 'origin28', labels: scale_1}
                 ]
               };
@@ -632,14 +565,12 @@ var likert_page_origin_12 = {
                 type: 'survey-likert',
                 questions: [
                   { name: 'origin29', labels: scale_1},
-                  { name: 'origin29', labels: scale_1},
                   { name: 'origin29', labels: scale_1}
                 ]
               };
               var likert_page_origin_30 = {
                 type: 'survey-likert',
                 questions: [
-                  { name: 'origin30', labels: scale_1},
                   { name: 'origin30', labels: scale_1},
                   { name: 'origin30', labels: scale_1}
                 ]
@@ -649,14 +580,12 @@ var likert_page_origin_12 = {
                 type: 'survey-likert',
                 questions: [
                   { name: 'origin31', labels: scale_1},
-                  { name: 'origin31', labels: scale_1},
                   { name: 'origin31', labels: scale_1}
                 ]
               };
               var likert_page_origin_32 = {
                 type: 'survey-likert',
                 questions: [
-                  { name: 'origin32', labels: scale_1},
                   { name: 'origin32', labels: scale_1},
                   { name: 'origin32', labels: scale_1}
                 ]
@@ -665,14 +594,12 @@ var likert_page_origin_12 = {
                 type: 'survey-likert',
                 questions: [
                   { name: 'origin33', labels: scale_1},
-                  { name: 'origin33', labels: scale_1},
                   { name: 'origin33', labels: scale_1}
                 ]
               };
               var likert_page_origin_34 = {
                 type: 'survey-likert',
                 questions: [
-                  { name: 'origin34', labels: scale_1},
                   { name: 'origin34', labels: scale_1},
                   { name: 'origin34', labels: scale_1}
                 ]
@@ -681,7 +608,6 @@ var likert_page_origin_12 = {
                 type: 'survey-likert',
                 questions: [
                   { name: 'origin35', labels: scale_1},
-                  { name: 'origin35', labels: scale_1},
                   { name: 'origin35', labels: scale_1}
                 ]
               };
@@ -689,8 +615,14 @@ var likert_page_origin_12 = {
                 type: 'survey-likert',
                 questions: [
                   { name: 'origin36', labels: scale_1},
-                  { name: 'origin36', labels: scale_1},
                   { name: 'origin36', labels: scale_1}
+                ]
+              };
+              var likert_page_origin_37 = {
+                type: 'survey-likert',
+                questions: [
+                  { name: 'origin37', labels: scale_1},
+                  { name: 'origin37', labels: scale_1}
                 ]
               };
   function downloadCSV(){
@@ -755,15 +687,15 @@ function getData(){
 
 var all_data = jsPsych.data.get();
 // get csv representation of data and log to console
-document.write(current_node_id);
-document.write(data_from_current_node);
+// document.write(current_node_id);
+// document.write(data_from_current_node);
 
-var tmp_all_data = jsPsych.data.get().csv();
-console.log(tmp_all_data.length);
-var jbSplit = tmp_all_data.split(',');
-for(var i  in jbSplit){
-  document.write( '<p>' + jbSplit[i] + '</p>' );
-}
+// var tmp_all_data = jsPsych.data.get().csv();
+// console.log(tmp_all_data.length);
+// var jbSplit = tmp_all_data.split(',');
+// for(var i  in jbSplit){
+//   document.write( '<p>' + jbSplit[i] + '</p>' );
+// }
 //리커트 응답만 추출
 // csv에 저장
 // saveData(data_from_current_node, jsPsych.data.get().csv());
@@ -794,9 +726,9 @@ function saveData(name, data_p){
     url: 'write_data_tmp.php',
     // data: JSON.stringify({'filename': name, 'filedata': data_p}),
     data : {filename: name, filedata : data_p},
-    dataType: 'text',
-    error : function(){ alert('통신실패!!');  },
-    success : function(res){ alert(res); }
+    dataType: 'text'
+    // error : function(){ alert('통신실패!!');  },
+    // success : function(res){ alert(res); }
 });
 
 

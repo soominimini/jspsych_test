@@ -30,9 +30,6 @@ while($file=readdir($result)) {
 
  $file_count-=1; //디렉토리 개수 하나 빼기?
 
- echo("파일의 갯수는:".$file_count);
-
-
 $name = "data/".$_POST["filename"].$file_count.".csv";
 file_put_contents($name ,$_POST["filedata"]) ;
 
