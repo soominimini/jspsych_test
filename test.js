@@ -34,10 +34,6 @@ var external_html3 = {
   // execute_script : true,
   // check_fn: user_name_func
 };
-var data_save ={
-  type: 'call-function',
-  func: saveDBdata
-};
  /* define instructions trial */
 
 var trial = {
@@ -75,7 +71,6 @@ var trial = {
     questions: [
       { name: 'data2', labels: scale_1},
       { name: 'data2', labels: scale_1},
-      { name: 'data2', labels: scale_1}
     ],
     // randomize_question_order: true //질문 순서 랜덤
   };
@@ -763,8 +758,6 @@ var all_data = jsPsych.data.get();
 document.write(current_node_id);
 document.write(data_from_current_node);
 
-
-console.log(all_data.csv());
 var tmp_all_data = jsPsych.data.get().csv();
 console.log(tmp_all_data.length);
 var jbSplit = tmp_all_data.split(',');
@@ -773,47 +766,61 @@ for(var i  in jbSplit){
 }
 //리커트 응답만 추출
 // csv에 저장
-saveData(data_from_current_node, jsPsych.data.get().csv());
-}
-function saveData(name, data){
-    var xhr = new XMLHttpRequest();
-    xhr.open('POST', 'write_data_tmp.php'); // 'write_data.php' is the path to the php file described above.
-    xhr.setRequestHeader('Content-Type', 'application/json');
-    xhr.send(JSON.stringify({filename: name, filedata: data}));
-
-  //   var xhr2 = new XMLHttpRequest();
-  //   xhr2.open('POST', 'write_data.php'); // change 'write_data.php' to point to php script.
-  //   xhr2.setRequestHeader('Content-Type', 'application/json');
-  //   xhr2.onload = function() {
-  //   if(xhr2.status == 200){
-  //     var response = JSON.parse(xhr2.responseText);
-  //     document.write(response.success);
-  //   }
-  // };
-  // xhr2.send(jsPsych.data.get().json());
+// saveData(data_from_current_node, jsPsych.data.get().csv());
+saveData("data_from_current_node", jsPsych.data.get().csv());
 }
 
-var saveDBdata = function(){
-  var xhr2 = new XMLHttpRequest();
-  xhr2.open('POST', 'write_data.php'); // change 'write_data.php' to point to php script.
-  xhr2.setRequestHeader('Content-Type', 'application/json');
-  xhr2.onload = function() {
-  if(xhr2.status == 200){
-    var response = JSON.parse(xhr2.responseText);
-    document.write(response.success);
-  }
-};
-xhr2.send(jsPsych.data.get().json());
+
+
+function saveData(name, data_p){
+    // var xhr = new XMLHttpRequest();
+    // var url = 'write_data_tmp.php';
+    // xhr.open('POST',url, true); // 'write_data.php' is the path to the php file described above.
+    // xhr.setRequestHeader('Content-Type', 'application/json');
+    // xhr.send(JSON.stringify({filename: name, filedata: data}));
+
+    
+  //   $.ajax({
+  //     type : "POST",
+  //     url : 'write_data_tmp.php',
+  //     data: {a:2},
+  //     dataType : "text",
+  //     error : function(){ alert('통신실패!!');  },
+  //     success : function(res){ alert(res); }
+  //  });
+
+   $.ajax({
+    type: 'POST',
+    url: 'write_data_tmp.php',
+    // data: JSON.stringify({'filename': name, 'filedata': data_p}),
+    data : {filename: name, filedata : data_p},
+    dataType: 'text',
+    error : function(){ alert('통신실패!!');  },
+    success : function(res){ alert(res); }
+});
+
+
+
+//   //   var xhr2 = new XMLHttpRequest();
+//   //   xhr2.open('POST', 'write_data.php'); // change 'write_data.php' to point to php script.
+//   //   xhr2.setRequestHeader('Content-Type', 'application/json');
+//   //   xhr2.onload = function() {
+//   //   if(xhr2.status == 200){
+//   //     var response = JSON.parse(xhr2.responseText);
+//   //     document.write(response.success);
+//   //   }
+//   // };
+//   // xhr2.send(jsPsych.data.get().json());
 }
+
 
   //last page
   var last_page = {
     type: 'instructions',
     pages: [
-        '<p>테스트가 종료 되었습니다</p>'+
-        "종료 버튼을 눌러 주세요" +
-        '<p> <button onclick="downloadCSV();">download</button></p>'+
-        ' <button onclick=" getData();">submit</button>'
+      '<p>테스트가 종료 되었습니다</p>'+
+      "종료 버튼을 눌러 주세요" +
+      ' <button onclick=" getData();">submit</button>'
     ]
     // show_clickable_nav: true
   }
