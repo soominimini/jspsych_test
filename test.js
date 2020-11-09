@@ -1,14 +1,16 @@
 
 /* define welcome message trial */
-var global_name  = "";
-// var user_name_func = function(elem) {
-//   var name = document.getElementById('user_name');
-//   var btn = document.getElementById('start');
-// if (btn.clicked()== true) {
-//   getName(name);
-// return true;
-// }
-// };
+
+
+var external_personal_info = {
+  type:"external-html",
+  url: "user_info.html",
+  cont_btn: "start",
+  cont_key: 1
+};
+
+///getting personal information
+
 
 var external_html = {
   type:"external-html",
@@ -57,6 +59,18 @@ var trial = {
 
   ];
   
+  var test_page = {
+    type: 'survey-likert',
+    questions: [
+      {name: 'a', labels: scale_1},
+      { name: 'a', labels: scale_1}
+      // {name: 'data1', labels: scale_1}
+    ],
+  };
+
+
+
+
   var likert_page = {
     type: 'survey-likert',
     questions: [
@@ -359,6 +373,148 @@ var trial = {
       { name: 'data40', labels: scale_1}
     ]
   };
+  var likert_page41 = {
+    type: 'survey-likert',
+    questions: [
+      {name: 'data41', labels: scale_1},
+      { name: 'data41', labels: scale_1}
+    ]
+  };
+  var likert_page42 = {
+    type: 'survey-likert',
+    questions: [
+      {name: 'data42', labels: scale_1},
+      { name: 'data42', labels: scale_1}
+    ]
+  };
+  var likert_page43 = {
+    type: 'survey-likert',
+    questions: [
+      {name: 'data43', labels: scale_1},
+      { name: 'data43', labels: scale_1}
+    ]
+  };
+  var likert_page44 = {
+    type: 'survey-likert',
+    questions: [
+      {name: 'data44', labels: scale_1},
+      { name: 'data44', labels: scale_1}
+    ]
+  };
+
+  var likert_page45 = {
+    type: 'survey-likert',
+    questions: [
+      {name: 'data45', labels: scale_1},
+      { name: 'data45', labels: scale_1}
+    ]
+  };
+
+  var likert_page46 = {
+    type: 'survey-likert',
+    questions: [
+      {name: 'data46', labels: scale_1},
+      { name: 'data46', labels: scale_1}
+    ]
+  };
+
+  var likert_page47 = {
+    type: 'survey-likert',
+    questions: [
+      {name: 'data47', labels: scale_1},
+      { name: 'data47', labels: scale_1}
+    ]
+  };
+  var likert_page48 = {
+    type: 'survey-likert',
+    questions: [
+      {name: 'data48', labels: scale_1},
+      { name: 'data48', labels: scale_1}
+    ]
+  };
+  var likert_page49 = {
+    type: 'survey-likert',
+    questions: [
+      {name: 'data49', labels: scale_1},
+      { name: 'data49', labels: scale_1}
+    ]
+  };
+  var likert_page50 = {
+    type: 'survey-likert',
+    questions: [
+      {name: 'data50', labels: scale_1},
+      { name: 'data50', labels: scale_1}
+    ]
+  };
+
+  var likert_page51 = {
+    type: 'survey-likert',
+    questions: [
+      {name: 'data51', labels: scale_1},
+      { name: 'data51', labels: scale_1}
+    ]
+  };
+  
+  var likert_page52 = {
+    type: 'survey-likert',
+    questions: [
+      {name: 'data52', labels: scale_1},
+      { name: 'data52', labels: scale_1}
+    ]
+  };
+  
+  var likert_page53 = {
+    type: 'survey-likert',
+    questions: [
+      {name: 'data53', labels: scale_1},
+      { name: 'data53', labels: scale_1}
+    ]
+  };
+  var likert_page54 = {
+    type: 'survey-likert',
+    questions: [
+      {name: 'data54', labels: scale_1},
+      { name: 'data54', labels: scale_1}
+    ]
+  };
+  var likert_page55 = {
+    type: 'survey-likert',
+    questions: [
+      {name: 'data55', labels: scale_1},
+      { name: 'data55', labels: scale_1}
+    ]
+  };
+  var likert_page56 = {
+    type: 'survey-likert',
+    questions: [
+      {name: 'data56', labels: scale_1},
+      { name: 'data56', labels: scale_1}
+    ]
+  };
+  var likert_page57 = {
+    type: 'survey-likert',
+    questions: [
+      {name: 'data57', labels: scale_1},
+      { name: 'data57', labels: scale_1}
+    ]
+  };
+  var likert_page58 = {
+    type: 'survey-likert',
+    questions: [
+      {name: 'data58', labels: scale_1},
+      { name: 'data58', labels: scale_1}
+    ]
+  };
+  var likert_page59 = {
+    type: 'survey-likert',
+    questions: [
+      {name: 'data59', labels: scale_1},
+      { name: 'data59', labels: scale_1}
+    ]
+  };
+
+
+
 
 // 원본 사진 샘플
 
@@ -625,6 +781,97 @@ var likert_page_origin_12 = {
                   { name: 'origin37', labels: scale_1}
                 ]
               };
+              var likert_page_origin_38 = {
+                type: 'survey-likert',
+                questions: [
+                  { name: 'origin38', labels: scale_1},
+                  { name: 'origin38', labels: scale_1}
+                ]
+              };
+              var likert_page_origin_39 = {
+                type: 'survey-likert',
+                questions: [
+                  { name: 'origin39', labels: scale_1},
+                  { name: 'origin39', labels: scale_1}
+                ]
+              };
+              var likert_page_origin_40 = {
+                type: 'survey-likert',
+                questions: [
+                  { name: 'origin40', labels: scale_1},
+                  { name: 'origin40', labels: scale_1}
+                ]
+              };
+              var likert_page_origin_41 = {
+                type: 'survey-likert',
+                questions: [
+                  { name: 'origin41', labels: scale_1},
+                  { name: 'origin41', labels: scale_1}
+                ]
+              };
+              var likert_page_origin_42 = {
+                type: 'survey-likert',
+                questions: [
+                  { name: 'origin42', labels: scale_1},
+                  { name: 'origin42', labels: scale_1}
+                ]
+              };
+              var likert_page_origin_43 = {
+                type: 'survey-likert',
+                questions: [
+                  { name: 'origin43', labels: scale_1},
+                  { name: 'origin43', labels: scale_1}
+                ]
+              };
+              var likert_page_origin_44 = {
+                type: 'survey-likert',
+                questions: [
+                  { name: 'origin44', labels: scale_1},
+                  { name: 'origin44', labels: scale_1}
+                ]
+              };
+              var likert_page_origin_45 = {
+                type: 'survey-likert',
+                questions: [
+                  { name: 'origin45', labels: scale_1},
+                  { name: 'origin45', labels: scale_1}
+                ]
+              };
+              var likert_page_origin_46 = {
+                type: 'survey-likert',
+                questions: [
+                  { name: 'origin46', labels: scale_1},
+                  { name: 'origin46', labels: scale_1}
+                ]
+              };
+              var likert_page_origin_47 = {
+                type: 'survey-likert',
+                questions: [
+                  { name: 'origin47', labels: scale_1},
+                  { name: 'origin47', labels: scale_1}
+                ]
+              };
+              var likert_page_origin_48 = {
+                type: 'survey-likert',
+                questions: [
+                  { name: 'origin48', labels: scale_1},
+                  { name: 'origin48', labels: scale_1}
+                ]
+              };
+              var likert_page_origin_49 = {
+                type: 'survey-likert',
+                questions: [
+                  { name: 'origin49', labels: scale_1},
+                  { name: 'origin49', labels: scale_1}
+                ]
+              };
+              var likert_page_origin_50 = {
+                type: 'survey-likert',
+                questions: [
+                  { name: 'origin50', labels: scale_1},
+                  { name: 'origin50', labels: scale_1}
+                ]
+              };
   function downloadCSV(){
 
     console.log(global_dict.length);
@@ -661,45 +908,22 @@ var likert_page_origin_12 = {
 document.body.removeChild(downloadLink);
 
 }
-function getName(){
-  global_name = document.getElementById('user_name');
-  document.write(global_name);
-  // alert(global_name);
-}
-
 function getData(){
+
+  // console.log(global_sex);
     // generate a random subject ID with 15 characters
     var current_node_id = jsPsych.currentTimelineNodeID();
 
     var data_from_current_node = jsPsych.data.getDataByTimelineNode(current_node_id);
 
-    // pick a random condition for the subject at the start of the experiment
-    // var condition_assignment = jsPsych.randomization.sampleWithoutReplacement(['conditionA', 'conditionB', 'conditionC'], 1)[0];
-    
-    // record the condition assignment in the jsPsych data
-    // this adds a property called 'subject' and a property called 'condition' to every trial
-    // jsPsych.data.addProperties({
-    //   subject: subject_id,
-    //   // condition: condition_assignment
-    // });
-    // jsPsych.data.addProperties({subject: 1, condition: 'control'});
+    //버튼 비활성화
+    btn = document.getElementById('btn');
+    btn.disabled = 'disabled';
 
 
-var all_data = jsPsych.data.get();
-// get csv representation of data and log to console
-// document.write(current_node_id);
-// document.write(data_from_current_node);
-
-// var tmp_all_data = jsPsych.data.get().csv();
-// console.log(tmp_all_data.length);
-// var jbSplit = tmp_all_data.split(',');
-// for(var i  in jbSplit){
-//   document.write( '<p>' + jbSplit[i] + '</p>' );
-// }
-//리커트 응답만 추출
-// csv에 저장
-// saveData(data_from_current_node, jsPsych.data.get().csv());
-saveData("data_from_current_node", jsPsych.data.get().csv());
+    var all_data = jsPsych.data.get();
+    // console.log(all_data);
+    saveData("data_from_current_node", jsPsych.data.get().csv());
 }
 
 
@@ -743,6 +967,9 @@ function saveData(name, data_p){
 //   //   }
 //   // };
 //   // xhr2.send(jsPsych.data.get().json());
+
+
+// window.alert("테스트 종료");
 }
 
 
@@ -752,7 +979,7 @@ function saveData(name, data_p){
     pages: [
       '<p>테스트가 종료 되었습니다</p>'+
       "종료 버튼을 눌러 주세요" +
-      ' <button onclick=" getData();">submit</button>'
+      ' <button id = "btn" onclick=" getData();">submit</button>'
     ]
     // show_clickable_nav: true
   }

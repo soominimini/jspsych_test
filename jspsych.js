@@ -246,6 +246,14 @@ window.jsPsych = (function() {
     // of the DataCollection, for easy access and editing.
     var trial_data_values = trial_data.values()[0];
 
+    if(trial_data_values.url=="user_info.html"){
+      trial_data_values["user_sex"]= global_sex;
+      trial_data_values["user_age"]= global_age;
+      trial_data_values["user_nationality"]= global_nationality;
+
+    }
+
+
     // handle callback at plugin level
     if (typeof current_trial.on_finish === 'function') {
       current_trial.on_finish(trial_data_values);
@@ -260,6 +268,7 @@ window.jsPsych = (function() {
     opts.on_data_update(trial_data_values);
 
     // wait for iti
+    //여기서 문제가 생기는 듯
     if (typeof current_trial.post_trial_gap === null || typeof current_trial.post_trial_gap === 'undefined') {
       if (opts.default_iti > 0) {
         setTimeout(nextTrial, opts.default_iti);

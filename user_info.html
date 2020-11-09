@@ -1,0 +1,104 @@
+<!-- 3개 페이지 정도? -->
+
+
+<!DOCTYPE html>
+<html>
+    <style>
+        #dropdown1 {
+            position: relative;
+            width: 30%;
+            height: 30%;
+            float: left;
+            }
+            #dropdown2{
+            margin-left:15%;
+            position: relative;
+            width: 30%;
+            height: 30%;
+            float:right;
+            }
+            #age{
+            position: relative;
+            width: 30%;
+            height: 30%;
+            float: top;
+            top: 20%;
+            }
+    </style>
+
+<body>
+    
+    <!-- 드롭다운? 국가 + 기간 -->
+    <!-- <input type="textarea" name = "nation"> -->
+    <div>
+        <div id= "age" style="position: relative;width: 100%;">
+            
+            <div style=" position: relative; margin: auto;">
+                <h3>나이</h3> 
+                <input type="textarea" name = "age">
+            </div>
+            <p></p>
+            
+        </div>
+        <div id= "sex" style="position: relative;width: 100%; margin-top: 15%;">
+        <h3>성별 선택</h3>
+        <label> <input type="radio" name="sex" value="male" > 남성</label> 
+        <label> <input type="radio" name="sex" value="female" > 여성</label> 
+        </div>
+        <p></p>
+        
+        <div class="nation" style="position: relative; width:100%; margin-top: 15%;">
+            <h3>거주한 나라와 기간</h3>
+    
+    <div class="custom-select1" style="position: relative; width:100px;float: left;">
+        <select id = "custom-select1">
+        <option value="0">나라 선택</option>
+      <option value="asia">아시아</option>
+      <option value="europe">유럽</option>
+      <option value="northern America">북미</option>
+      <option value="middle Southern America">중·남미</option>
+      <option value="Africa">아프리카</option>
+      <option value="6">Jaguar</option>
+      <option value="7">Land Rover</option>
+      <option value="8">Mercedes</option>
+      <option value="9">Mini</option>
+      <option value="10">Nissan</option>
+      <option value="11">Toyota</option>
+      <option value="12">Volvo</option>
+    </select>
+</div>
+
+<div class="custom-select2" style=" position: relative; width:100px; float: right;">
+
+    <button type="button" id="ok_for_nation" onclick="getValue()">OK</button>
+</div>
+  <div class="custom-select2" style=" position: relative; width:100px; float: right;">
+    <select id = "custom-select2">
+      <option value="0">기간 선택</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+      <option value="11">Toyota</option>
+      <option value="12">Volvo</option>
+    </select>
+</div>
+</div>
+</div>
+<div id = "write" style="position: relative; font-size: 12pt; margin-top: 20%;">
+    <ul id = 'test'></ul>
+</div>
+    <button type="button" id="start" onclick="sendInfo()";>Next</button>
+</body>
+
+<script>
+    
+</script>
+
+  </html>

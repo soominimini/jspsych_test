@@ -1,6 +1,0 @@
-"rt","url","trial_type","trial_index","time_elapsed","internal_node_id","responses","question_order"
-"1259.3849999830127","instruction_page.html","external-html","0","1289","0.0-0.0","",""
-"559.1150000691414","instruction_page2.html","external-html","1","1859","0.0-1.0","",""
-"405.3950000088662","instruction_page3.html","external-html","2","2277","0.0-2.0","",""
-"3699.4699998758733","","survey-likert","3","5989","0.0-3.0","{""0"":5,""1"":6}","[0,1]"
-"3832.0899999234825","","survey-likert","4","9827","0.0-4.0","{""0"":4,""1"":4}","[0,1]"
