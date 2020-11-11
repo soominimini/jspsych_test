@@ -7,14 +7,16 @@
     <script src="jspsych.js"></script>
     <!-- js 파일 반영 바로바로 절대 안되니까 ?v=<%=System.currentTimeMillis() %> 이 코드로 현재시각을 계속 반영하게 되서 계속 호출하게 끔 -->
     <!-- <script src="test.js?v=<%=System.currentTimeMillis() %>"></script> -->
-    <!-- 로컬에서 작업 할 때는 상관 없는데 실제 서버에 올리면  ?v=<%=System.currentTimeMillis() %> 이거 지워야되 에러남 -->
     <script src="test.js"></script>
+    <!-- 로컬에서 작업 할 때는 상관 없는데 실제 서버에 올리면  ?v=<%=System.currentTimeMillis() %> 이거 지워야되 에러남 -->
     <script src="plugins/jspsych-external-html.js"></script>
     <script src="plugins/jspsych-html-keyboard-response.js"></script>
     <script src="plugins/jspsych-image-keyboard-response.js"></script>
     <script src="plugins/jspsych-survey-html-form.js"></script>
-    <!-- <script src="plugins/jspsych-survey-likert.js?v=<%=System.currentTimeMillis() %>"></script> -->
+    <!-- <script src="plugins/jspsych-survey-likert.js?v=<%=System.currentTimeMillis() %>"></script>
+    <script src="plugins/jspsych-survey-likert2.js?v=<%=System.currentTimeMillis() %>"></script> -->
     <script src="plugins/jspsych-survey-likert.js"></script>
+    <script src="plugins/jspsych-survey-likert2.js"></script>
     <script src="plugins/jspsych-instructions.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link href="css/jspsych.css" rel="stylesheet" type="text/css"></link>
@@ -60,7 +62,6 @@ function sendInfo(){
     global_nationality = global_arr;
     console.log(radioVal+" ,  "+radioVal2+" , "+getTagId);
 }
-
 function getValue(){
 
   cnt_for_nation_ok++;
@@ -456,7 +457,7 @@ function getValue(){
         // timeline.push(likert_page_origin_30);
         // timeline.push(likert_page_origin_31);
         // timeline.push(likert_page_origin_32);
-        // timeline.push(likert_page_origin_33);
+        // timeline.push(likert_page_origin_3 3);
         // timeline.push(likert_page_origin_34);
         // timeline.push(likert_page_origin_35);
         // timeline.push(likert_page_origin_36);
@@ -474,7 +475,8 @@ function getValue(){
         // timeline.push(likert_page_origin_48);
         // timeline.push(likert_page_origin_49);
         // timeline.push(likert_page_origin_50);
-
+        timeline.push(mid_external_html); 
+        timeline.push(CES_D_for_survey);   
          timeline.push(last_page);   
       //   timeline.push(trial_data);
          /* start the experiment */

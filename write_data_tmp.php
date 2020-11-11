@@ -23,11 +23,11 @@
 
 // $name = "data/".$_POST["filename"].$file_count.".csv";
 // file_put_contents($name ,$_POST["filedata"]) ;
-
 $dir = "data";
 $out_dir = scandir($dir);
 $count = count($out_dir);
 console.log($count);
+$global_user_node = $count;
 $name = "data/".$_POST["filename"].$count.".csv";
 file_put_contents($name ,$_POST["filedata"]) ;
 

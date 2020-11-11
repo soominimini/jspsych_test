@@ -1,12 +1,29 @@
 
 /* define welcome message trial */
+var alertBlock = function(elem) {
+  if ( $('input[name="sex"]:checked').val()!=undefined && $('input[name="age"]').val()!='' ) {
+    var getTagId = document.getElementById("write");
+    // getTagId = getTagId.getElementById("nationTxt");
+    var tmp = getTagId.getElementsByTagName("div");
+    if(tmp.length==0){
+      alert("선택 후 버튼을 눌러주세요");
+      return false;
+    }
+    else return true;
+  }
+  else {
+    alert("선택 후 버튼을 눌러주세요");
+    return false;
+  }
+};
+
 
 
 var external_personal_info = {
   type:"external-html",
   url: "user_info.html",
   cont_btn: "start",
-  cont_key: 1
+  check_fn: alertBlock
 };
 
 ///getting personal information
@@ -36,7 +53,57 @@ var external_html3 = {
   // execute_script : true,
   // check_fn: user_name_func
 };
- /* define instructions trial */
+var mid_external_html = {
+  type:"external-html",
+  url: "CES_D.html",
+  cont_btn: "start",
+  cont_key: 1,
+  // execute_script : true,
+  // check_fn: user_name_func
+};
+var scale_inorder = [
+  "드물다 / 1일 이하 ", 
+  "가끔 / 1~2일 ", 
+  "종종 / 3~4일", 
+  "대부분 / 5일 이상"
+];
+
+var CES_D_for_survey = {
+  type: 'survey-likert2',
+  
+  questions: [
+    {prompt: "평소에는 아무렇지도 않던 일들이 괴롭고 귀찮게 느껴졌다.", name: 'p1', labels: scale_inorder},
+    {prompt: "먹고 싶지 않고 식욕이 없다.", name: 'p2', labels: scale_inorder},
+    {prompt: "어느 누가 도와준다 하더라도 울적한 기분을 떨쳐버릴 수 없을 것 같다.", name: 'p3', labels: scale_inorder},
+    {prompt: "적어도 보통 사람들 만큼의 능력은 있었다고 생각한다 *.", name: 'p4', labels: scale_inorder},
+    {prompt: "어떤 일을 하든 집중하기 힘들었다.", name: 'p5', labels: scale_inorder},
+    {prompt: "우울했다.", name: 'p6', labels: scale_inorder},
+    {prompt: "하는 일마다 힘들게 느껴졌다.", name: 'p7', labels: scale_inorder},
+    {prompt: "앞일이 암담하게 느껴졌다.", name: 'p8', labels: scale_inorder},
+    {prompt: "지금까지의 내 인생은 실패작이라는 생각이 들었다.", name: 'p9', labels: scale_inorder},
+    {prompt: "두려웠다.", name: 'p10', labels: scale_inorder},
+    {prompt: "잠을 설쳤다(잠을 잘 이루지 못했다).", name: 'p11', labels: scale_inorder},
+    {prompt: "비교적 잘 지냈다 *", name: 'p12', labels: scale_inorder},
+    {prompt: "평소보다 말을 적게 했다, 말수가 줄었다.", name: 'p13', labels: scale_inorder},
+    {prompt: "세상에 홀로 있는 것처럼 외로웠다.", name: 'p14', labels: scale_inorder},
+    {prompt: "사람들이 나를 차갑게 대하는 것 같았다.", name: 'p15', labels: scale_inorder},
+    {prompt: "큰 불만없이 생활했다 *.", name: 'p16', labels: scale_inorder},
+    {prompt: "갑자기 울음이 나왔다.", name: 'p17', labels: scale_inorder},
+    {prompt: "마음이 슬펐다.", name: 'p18', labels: scale_inorder},
+    {prompt: "사람들이 나를 싫어하는 것 같았다.", name: 'p19', labels: scale_inorder},
+    {prompt: "도무지 뭘 시작할 기운이 안 났다.", name: 'p20', labels: scale_inorder}
+  ]
+};
+  //last page
+  var last_page = {
+    type: 'instructions',
+    pages: [
+      '<p>테스트가 종료 되었습니다</p>'+
+      "종료 버튼을 눌러 주세요" +
+      ' <button id = "btn" onclick=" getData();">submit</button>'
+    ]
+    // show_clickable_nav: true
+  }
 
 var trial = {
 
@@ -907,6 +974,7 @@ var likert_page_origin_12 = {
     downloadLink.click();
 document.body.removeChild(downloadLink);
 
+
 }
 function getData(){
 
@@ -924,8 +992,13 @@ function getData(){
     var all_data = jsPsych.data.get();
     // console.log(all_data);
     saveData("data_from_current_node", jsPsych.data.get().csv());
+
 }
 
+function page_move(){
+  alert("alert는 나오는데 확인 누르고 나서 어떻게 구글 폼으로...?");
+  document.location.href = "CES_D.html"
+}
 
 
 function saveData(name, data_p){
@@ -944,7 +1017,6 @@ function saveData(name, data_p){
   //     error : function(){ alert('통신실패!!');  },
   //     success : function(res){ alert(res); }
   //  });
-
    $.ajax({
     type: 'POST',
     url: 'write_data_tmp.php',
@@ -973,13 +1045,3 @@ function saveData(name, data_p){
 }
 
 
-  //last page
-  var last_page = {
-    type: 'instructions',
-    pages: [
-      '<p>테스트가 종료 되었습니다</p>'+
-      "종료 버튼을 눌러 주세요" +
-      ' <button id = "btn" onclick=" getData();">submit</button>'
-    ]
-    // show_clickable_nav: true
-  }

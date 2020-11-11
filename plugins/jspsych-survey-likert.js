@@ -156,6 +156,8 @@ jsPsych.plugins['survey-likert'] = (function () {
         html += '<div style="border:5px solid; margin:10px; color : #efefef;">';
       else
         html += '<div style="border:5px solid; margin:10px;  margin-top: 20px; color : #efefef;">';
+
+      if(   trial.questions[0].name[0]!='p'){
       html += '<label class="jspsych-survey-likert-statement">' +
         '<img src="img/SAM/SAM' + temp + '_1.png" style = "width : 10%;"></img>' +
         '<img src="img/SAM/SAM' + temp + '_2.png" style = "width : 10%;"></img>' +
@@ -165,6 +167,7 @@ jsPsych.plugins['survey-likert'] = (function () {
         '<img src="img/SAM/SAM' + temp + '_6.png" style = "width : 10%;"></img>' +
         '<img src="img/SAM/SAM' + temp + '_7.png" style = "width : 10%;"></img>' +
         '</label>';
+      }
       // add options
       var width = 70 / question.labels.length;
       var options_string = '<ul class="jspsych-survey-likert-opts" data-name="' + question.name + '" data-radio-group="Q' + question_order[i] + '">';
